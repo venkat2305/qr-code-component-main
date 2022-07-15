@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+/* as we want to change the position of the whole container to the center, we changed the display prop of body to flex.
+if we take container as the flex container, the items in the container(text and img) will be changed. */
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
+    min-height : 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 360px;
+    padding: 18px;
+    border-radius: 17px;
+    text-align: center;
+    margin: 0 1em;
+}
+
+/* width:auto  aligns the element to the center */
+
+.text{
+    padding: 22px 10px;
+}
+
+h2{
+    font-weight: 700;
+    padding-bottom: 10px;
+    color:hsl(218, 44%, 22%) ;
+}
+
+p{
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+}
+
+img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Width 100%, if you specify width:100%, the element's total width will be 100% of its containing block plus any horizontal margin, padding and border (unless you've used box-sizing:border-box, in which case only margins are added to the 100% to change how its total width is calculated) */
+
+
+/* width: auto; will try as hard as possible to keep an element the same width as its parent container when additional space is added from margins, padding, or borders.
+width: 100%; will make the element as wide as the parent container. Extra spacing will be added to the element's size without regards to the parent. This typically causes problems */
